@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
     <title>Quote</title>
 </head>
-<body>
-    <Div id="quote_block">
-        <h1>
+<body onload="GenQuote()">
+    <Div id="quote_display">
+        <h1 id="quote_string">
             
         </h1>
     </Div>
     <button onclick="GenQuote()" class="button-quote-gen">New Quote</button>
-    <a href="">
-        <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+    <a href="" class="twitter-share-button" target="_blank">
+        <i class="fa-brands fa-twitter fa-beat fa-xl" style="color: #1da1f2;"></i>
     </a>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/e60ec38c04.js" crossorigin="anonymous"></script>
