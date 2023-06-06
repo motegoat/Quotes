@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image:url("background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -29,4 +29,121 @@ i{
     width: 50px;
     height: 50px;
     
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url("background.jpg") no-repeat center center/cover fixed;
+    max-height: 100vh;
+}
+
+#quote_display {
+    background: rgba(225, 225, 225, 0.5);
+    padding: 20px 30px;
+    margin: 200px;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: 100;
+}
+
+#quote_string {
+    text-align: left;
+}
+
+#quote_string::before {
+    content: "\201C";
+    font-weight: bold; 
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 5px;
+}
+
+#quote_string::after {
+    content: "\201D";
+    font-weight: bold; 
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    
+}
+
+#author_string {
+    text-align: right;
+    padding-top: 15px;
+}
+
+/* Button */
+.btn {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FAE8E0;
+    border: none;
+    border-top: #D8A7B1 solid 3px;
+    border-bottom: #D8A7B1 solid 3px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway',sans-serif ;
+    border-radius: 5px;
+    margin-bottom: 25%;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    border-top: #EF7C8E solid 3px;
+    border-bottom: #EF7C8E solid 3px;
+  }
+
+  .btn:active {
+    background: #EF7C8E;
+    border-top: #FAE8E0 solid 3px;
+    border-bottom: #FAE8E0 solid 3px;
+  }
+
+  /* footer */
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  footer .container .icon a{
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 3px;
+    color: #ccc;
+  }
+
+  footer .container .icon a:hover {
+    background-color: #fff;
+    border-radius: 100%;
+  }
+
+  footer .container #icon-t a:hover {
+    background: #1DA1F2;
+  }
+
+  footer .container #icon-i a:hover {
+    background: linear-gradient(to bottom right, #fccc63, #fbad50, #cd486b, #4c68d7);
+  }
+
+
+
+
+

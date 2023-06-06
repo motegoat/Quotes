@@ -8,15 +8,28 @@
     <title>Quote</title>
 </head>
 <body onload="GenQuote()">
-    <Div id="quote_display">
-        <h1 id="quote_string">
+    <section class="main">
+        <Div id="quote_display">
+            <h2 id="quote_string">
+                
+            </h2>
+            <h1 id="author_string">
+                
+            </h1>
             
-        </h1>
-    </Div>
-    <button onclick="GenQuote()" class="button-quote-gen">New Quote</button>
-    <a href="" class="twitter-share-button" target="_blank">
-        <i class="fa-brands fa-twitter fa-beat fa-xl" style="color: #1da1f2;"></i>
-    </a>
+        </Div>
+        <button onclick="GenQuote()" class="btn">New Quote</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="icon" id="icon-t">
+                <a id="a-icon-t" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <!--<a href="https://github.com/motegoat">Mote_Goat &COPY; 2023 | Quote</a>-->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/e60ec38c04.js" crossorigin="anonymous"></script>
 </body>
